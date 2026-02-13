@@ -1,0 +1,240 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Deconvolution.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Deconvolution.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DECONVOLUTION_DIALOG DIALOGEX 0, 0, 753, 332
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Деконволюция свёртки методом максимума энтропии."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SignalAndPulse,"Static",SS_OWNERDRAW | WS_BORDER,222,8,522,100
+    CONTROL         "",IDC_Convolution,"Static",SS_OWNERDRAW | WS_BORDER,222,116,522,100
+    CONTROL         "",IDC_Deconvolution,"Static",SS_OWNERDRAW | WS_BORDER,221,225,522,103
+    EDITTEXT        IDC_Ampl1,35,36,33,12,ES_AUTOHSCROLL
+    LTEXT           "A1 =",IDC_STATIC,17,37,17,8
+    EDITTEXT        IDC_Ampl2,35,60,33,12,ES_AUTOHSCROLL
+    LTEXT           "A2 =",IDC_STATIC,17,60,17,8
+    EDITTEXT        IDC_Ampl3,35,84,33,12,ES_AUTOHSCROLL
+    LTEXT           "A3 =",IDC_STATIC,17,85,17,8
+    LTEXT           "n1 =",IDC_STATIC,149,36,16,8
+    EDITTEXT        IDC_x2,167,60,36,12,ES_AUTOHSCROLL
+    LTEXT           "n2 =",IDC_STATIC,149,60,16,8
+    EDITTEXT        IDC_x3,167,84,36,12,ES_AUTOHSCROLL
+    LTEXT           "n3 =",IDC_STATIC,149,84,16,8
+    GROUPBOX        "Начальные параметры",IDC_STATIC,6,6,204,197,BS_CENTER
+    EDITTEXT        IDC_Sigma1,111,36,31,12,ES_AUTOHSCROLL
+    LTEXT           "Sigma1 =",IDC_STATIC,77,36,32,8
+    EDITTEXT        IDC_Sigma2,111,60,31,12,ES_AUTOHSCROLL
+    LTEXT           "Sigma2 =",IDC_STATIC,77,60,32,8
+    EDITTEXT        IDC_Sigma3,111,84,31,12,ES_AUTOHSCROLL
+    LTEXT           "Sigma3 =",IDC_STATIC,77,84,31,8
+    EDITTEXT        IDC_KolToch,139,163,47,12,ES_AUTOHSCROLL
+    LTEXT           "N = ",IDC_STATIC,124,164,12,8
+    DEFPUSHBUTTON   "1. Прямая задача",IDC_DrawSignalAndPulse,12,258,96,24
+    EDITTEXT        IDC_AmplPulse,40,134,51,12,ES_AUTOHSCROLL
+    LTEXT           "A =",IDC_STATIC,24,136,14,8
+    EDITTEXT        IDC_SigmaPulse,143,134,50,12,ES_AUTOHSCROLL
+    LTEXT           "Sigma =",IDC_STATIC,114,137,28,8
+    GROUPBOX        "Импульсная характеристика",IDC_STATIC,9,119,198,37,BS_CENTER
+    CONTROL         "",IDC_SignalColor,"Static",SS_OWNERDRAW,656,3,10,1
+    LTEXT           "Сигнал",IDC_STATIC,670,0,25,8
+    CONTROL         "",IDC_PulseColor,"Static",SS_OWNERDRAW,697,3,10,1
+    LTEXT           "Имп. хар.",IDC_STATIC,711,0,33,8
+    CONTROL         "",IDC_ConvolutionColor,"Static",SS_OWNERDRAW,643,112,10,1
+    LTEXT           "Конволюция",IDC_STATIC,657,108,44,8
+    CONTROL         "",IDC_DSignalColor,"Static",SS_OWNERDRAW,636,221,10,1
+    CONTROL         "",IDC_DeconvolutionColor,"Static",SS_OWNERDRAW,677,221,10,1
+    LTEXT           "Сигнал",IDC_STATIC,650,217,25,8
+    LTEXT           "Деконволюция",IDC_STATIC,691,217,52,8
+    PUSHBUTTON      "2. Обратная задача",IDC_DrawDeconvolution,12,294,96,24
+    CONTROL         "",IDC_ReconvolutionColor,"Static",SS_OWNERDRAW,704,112,10,1
+    LTEXT           "Повтор",IDC_STATIC,718,108,26,8
+    EDITTEXT        IDC_FuncZnach,87,214,75,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Функционал =",IDC_STATIC,36,217,50,8
+    GROUPBOX        "Входной сигнал",IDC_STATIC,10,24,198,78,BS_CENTER
+    EDITTEXT        IDC_x1,167,36,36,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Стоп",IDC_DrawDeconvolution2,132,300,60,18
+    EDITTEXT        IDC_KolToch2,51,163,47,12,ES_AUTOHSCROLL
+    LTEXT           "Шум Вх.=",IDC_STATIC,15,165,35,8
+    EDITTEXT        IDC_KolToch3,51,184,47,12,ES_AUTOHSCROLL
+    LTEXT           "Шум Вых.=",IDC_STATIC,10,186,40,8
+    EDITTEXT        IDC_KolToch4,139,184,47,12,ES_AUTOHSCROLL
+    LTEXT           "fd = ",IDC_STATIC,122,185,14,8
+    EDITTEXT        IDC_FuncZnach2,87,231,75,12,ES_AUTOHSCROLL
+    LTEXT           "Предел =",IDC_STATIC,52,233,34,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DECONVOLUTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 746
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Английский (США) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "IT_z4_deconvolution.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "IT_z4_deconvolution.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+#endif    // Английский (США) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Deconvolution.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
